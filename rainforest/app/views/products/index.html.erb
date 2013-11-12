@@ -1,0 +1,20 @@
+<h1>Rainforest</h1>
+
+<%= link_to "Post a new product to sell", "/products/new" %>
+
+<% @products.each do |product| %>
+	
+	<p class="text_width"><%= product[:name] %>, 
+		<%= product[:description] %>, 
+		<%= product[:price_in_cents] %> 
+	</p>
+	
+<%= link_to "products/#{product.id}" do %>
+
+	<img class="photo_size" src="<%= product[:photo] %>">
+
+<% end %>
+<% end %>
+
+<% #where do I define the id again? %>
+<% #how do I make the image clickable? %>
