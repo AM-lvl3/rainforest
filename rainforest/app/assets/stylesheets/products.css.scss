@@ -10,18 +10,12 @@ border-radius: 0.5em;
 
 .text_width {
 border: 0.1em solid black;
-max-width: 50%;
-font-family: verdana;
+max-width: 55%;
+
 font-size: 1em;
 
 }
 
-
-.show_photo_size {
-border-image: 1em;
-max-height: 10em;
-max-width: 10em;
-border: 0.1em solid black;
-border-radius: 0.5em;
-
+html {
+	font-family: verdana;
 }

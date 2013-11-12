@@ -1,12 +1,13 @@
 <h1>Rainforest</h1>
+<h3>Make it rain.</h3>
 
 <%= link_to "Post a new product to sell", "/products/new" %>
 
 <% @products.each do |product| %>
 	
-	<p class="text_width"><%= product[:name] %>, 
-		<%= product[:description] %>, 
-		<%= product[:price_in_cents] %> 
+	<p class="text_width"><strong><%= product[:name] %> </strong> | $<%= product.formatted_price %> <br>
+		<%= product[:description] %>
+		
 	</p>
 	
 <%= link_to "products/#{product.id}" do %>
