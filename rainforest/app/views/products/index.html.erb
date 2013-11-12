@@ -1,6 +1,8 @@
 <h1>Rainforest</h1>
 <h3>Make it rain.</h3>
 
+<%= link_to 'Sign up now or get lost!', "users/new" %><br><br>
+
 <%= link_to "Post a new product to sell", "/products/new" %>
 
 <% @products.each do |product| %>
@@ -14,7 +16,7 @@
 
 	<img class="photo_size" src="<%= product[:photo] %>">
 
-<% end %>
+	<% end %>
 <% end %>
 
 <% #where do I define the id again? %>
